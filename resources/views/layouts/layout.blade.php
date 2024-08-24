@@ -22,12 +22,12 @@
   <!-- Custom styles for this page -->
   <link href="{{url('assets/vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
-  
+
 
 </head>
 
 <body id="page-top">
-  
+
 
   <!-- Page Wrapper -->
   <div id="wrapper">
@@ -227,8 +227,8 @@
           </div>
         </div>
       </li>
-                
-     
+
+
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
@@ -291,7 +291,7 @@
           <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="group">
                 <div class="mr-2">
-                    {{ Carbon\Carbon::now()->format('l, d F Y')}}
+                    {{ Carbon\Carbon::now()->format('Y/m/d H:i:s') }}
                 </div>
               </div>
           </form>
@@ -333,7 +333,7 @@
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             @yield('content')
-            
+
 
           </div>
 
@@ -385,10 +385,10 @@
       </div>
     </div>
   </div>
-  
+
 
   <!-- Bootstrap core JavaScript-->
-  
+
   <script src="{{url('assets/vendor/jquery/jquery.min.js')}}"></script>
   <script src="{{url('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 

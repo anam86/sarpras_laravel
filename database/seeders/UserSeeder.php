@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Models\User;
 
 class UserSeeder extends Seeder
 {
@@ -11,7 +12,8 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
+        $user = new User();
+        $user->table('users')->insert([
             'name'=>'admin',
             'email'=>'admin@gmail.com',
             'username'=>'admin',

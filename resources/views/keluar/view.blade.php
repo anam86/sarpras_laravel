@@ -148,23 +148,23 @@
 
 </script>
 
-  @endpush
+@endpush
 
-   <script>
+<script>
  $(document).ready( function () {
     $('#example').DataTable({
-           processing: true,
-           serverSide: true,
-           ajax: "/keluar_json",
-           columns: [
+            processing: true,
+            serverSide: true,
+            ajax: "/keluar_json",
+            columns: [
                     { data: 'nama_barang', name: 'nama_barang' },
                     { data: 'jumlah_keluar', name: 'jumlah_keluar' },
                     { data: 'untuk', name: 'untuk' },
                     { data: 'tanggal_keluar', name: 'tanggal_keluar' },
-                    {data: 'action', name: 'action', orderable: false},
-                 ]
+                    { data: 'action', name: 'action', orderable: false },
+                  ]
         });
-     });
+      });
 </script>
   
 @endsection
